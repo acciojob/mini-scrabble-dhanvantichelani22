@@ -1,9 +1,6 @@
 //your code here
-function  textCount(event) {
-   let letterCnt = document.getElementById("letterCount");
-  // let letterCount = 0;
-
-const text = event.target.value;
+function myfunc(event) {
+	const text = event.target.value;
 	const len = text.length;
 	if(text === ""){
 		document.getElementById("letterCount").innerText = 0;	
@@ -12,10 +9,10 @@ const text = event.target.value;
 	}
 	
 }
-const txt = document.getElementById("evaluatedText");
-txt.addEventListener("click", ()=>{
+const input = document.getElementById("evaluatedText");
+input.addEventListener("click", ()=>{
 	document.getElementById("letterCount").innerText = 0;
 })
-txt.addEventListener("txt", (event) => {
-	textCount(event);
+input.addEventListener("input", (event) => {
+	myfunc(event);
 });
